@@ -1,6 +1,6 @@
 # Meetups
 
-**Shows the news in your feed**
+**Schedule your meetup location and share with your friends, peers or your closed ones**
 
 ---
 
