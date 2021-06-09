@@ -3,7 +3,11 @@ import NewMeetupForm from "../../components/meetups/NewMeetupForm";
 
 const NewMeetup: React.FC = () => (
   <>
-    <NewMeetupForm onAddMeetup={() => null} />
+    <NewMeetupForm
+      onAddMeetup={(data) => {
+        console.log(data);
+      }}
+    />
   </>
 );
 
