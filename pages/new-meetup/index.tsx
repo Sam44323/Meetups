@@ -1,8 +1,9 @@
 import React from "react";
+import NewMeetupForm from "../../components/meetups/NewMeetupForm";
 
 const NewMeetup: React.FC = () => (
   <>
-    <h1>New Meetup</h1>
+    <NewMeetupForm onAddMeetup={() => null} />
   </>
 );
 

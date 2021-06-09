@@ -61,3 +61,5 @@ const NewMeetupForm: React.FC<{ onAddMeetup: (data: any) => void }> = (
     </Card>
   );
 };
+
+export default NewMeetupForm;
