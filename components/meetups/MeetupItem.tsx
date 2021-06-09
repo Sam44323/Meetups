@@ -6,7 +6,7 @@ const MeetupItem: React.FC<{
   image: string;
   title: string;
   address: string;
-  id: number;
+  id: string;
 }> = (props) => {
   return (
     <li className={styles.item}>

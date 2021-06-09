@@ -3,7 +3,7 @@ import styles from "./MeetupList.module.css";
 import MeetupItem from "./MeetupItem";
 
 const MeetupList: React.FC<{
-  meetups: { id: number; image: string; title: string; address: string }[];
+  meetups: { id: string; image: string; title: string; address: string }[];
 }> = (props) => {
   return (
     <ul className={styles.list}>
