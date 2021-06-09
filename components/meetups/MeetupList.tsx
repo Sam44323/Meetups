@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./MeetupList.module.scss";
+import styles from "./MeetupList.module.css";
 import MeetupItem from "./MeetupItem";
 
 const MeetupList: React.FC<{
@@ -10,7 +10,6 @@ const MeetupList: React.FC<{
       {props.meetups.map((meetup) => (
         <MeetupItem
           key={meetup.id}
-          id={meetup.id}
           image={meetup.image}
           title={meetup.title}
           address={meetup.address}

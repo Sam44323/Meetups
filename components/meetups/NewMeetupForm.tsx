@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import styles from "./NewMeetupForm.module.scss";
+import styles from "./NewMeetupForm.module.css";
 import Card from "../ui/Card";
 
 const NewMeetupForm: React.FC<{ onAddMeetup: (data: any) => void }> = (

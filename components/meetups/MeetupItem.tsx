@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./MeetupItem.module.scss";
+import styles from "./MeetupItem.module.css";
 import Card from "../ui/Card";
 
 const MeetupItem: React.FC<{ image: string; title: string; address: string }> =

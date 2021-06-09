@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "./MainNavigation.module.scss";
+import styles from "./MainNavigation.module.css";
 
 const MainNavigation: React.FC = () => {
   return (

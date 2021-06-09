@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Layout.module.scss";
+import styles from "./Layout.module.css";
 import MainNavigation from "./MainNavigation";
 
 const Layout: React.FC = (props) => {
