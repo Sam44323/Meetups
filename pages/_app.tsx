@@ -3,9 +3,8 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import React from "react";
 import Layout from "../components/layout/Layout";
-import MainNavigation from "../components/layout/MainNavigation";
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
@@ -17,6 +16,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Layout>
     </>
   );
-}
+};
 
 export default MyApp;
