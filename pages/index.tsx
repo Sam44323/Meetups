@@ -8,6 +8,7 @@ const DUMMY_MEETUPS = [
     image:
       "https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",
     address: "Some address 5,12345 Some City",
+    description: "This a first meetup",
   },
   {
     id: "m2",
@@ -15,6 +16,7 @@ const DUMMY_MEETUPS = [
     image:
       "https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",
     address: "Some address 5,12345 Some City",
+    description: "This a second meetup",
   },
   {
     id: "m3",
@@ -22,6 +24,7 @@ const DUMMY_MEETUPS = [
     image:
       "https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",
     address: "Some address 5,12345 Some City",
+    description: "This a third meetup",
   },
 ];
 
