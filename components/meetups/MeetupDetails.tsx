@@ -9,10 +9,12 @@ const MeetupDetails: React.FC<{
 }> = ({ url, title, address, description }) => {
   return (
     <>
-      <img src={url} alt={title} />
-      <h1>{title}</h1>
-      <address>{address}</address>
-      <p>{description}</p>
+      <section className={styles.detail}>
+        <img src={url} alt={title} />
+        <h1>{title}</h1>
+        <address>{address}</address>
+        <p>{description}</p>
+      </section>
     </>
   );
 };
