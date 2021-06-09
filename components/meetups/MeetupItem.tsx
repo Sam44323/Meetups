@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./MeetupItem.module.css";
 import Card from "../ui/Card";
+import { useRouter } from "next/router";
 
 const MeetupItem: React.FC<{
   image: string;
@@ -8,6 +9,12 @@ const MeetupItem: React.FC<{
   address: string;
   id: string;
 }> = (props) => {
+  const router = useRouter();
+
+  const showDetailsHandler = () => {
+    router.push(`/${props.id}`);
+  };
+
   return (
     <li className={styles.item}>
       <Card>
@@ -19,7 +26,7 @@ const MeetupItem: React.FC<{
           <address>{props.address}</address>
         </div>
         <div className={styles.actions}>
-          <button>Show Details</button>
+          <button onClick={showDetailsHandler}>Show Details</button>
         </div>
       </Card>
     </li>
