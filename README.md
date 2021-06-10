@@ -10,7 +10,7 @@
 
 - Next-JS
 - Typescript
-- SCSS
+- CSS-Modules
 - Express
 
 ---
