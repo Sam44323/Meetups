@@ -1,3 +1,5 @@
+import { MongoClient } from "mongodb";
+
 const Handler = (req: Request, res: Response) => {
   if (req.method === "POST") {
     const data = req.body;
