@@ -4,9 +4,7 @@ const Handler = async (req: any, res: any) => {
   if (req.method === "POST") {
     const data = req.body;
     console.log(data);
-    const client = await MongoClient.connect(
-      "mongodb://127.0.0.1:27017/Meetups"
-    );
+    const client = await MongoClient.connect(process.env.URL_DATA!);
     if (client) {
       const db = client.db();
       const meetupsCollections = db.collection("meetups");
