@@ -1,3 +1,4 @@
+import { GetStaticProps } from "next";
 import React from "react";
 import MeetupList from "../components/meetups/MeetupList";
 
@@ -28,10 +29,27 @@ const DUMMY_MEETUPS = [
   },
 ];
 
-const Meetup: React.FC = () => (
+const Meetup: React.FC<{
+  meetups: {
+    id: string;
+    title: string;
+    image: string;
+    address: string;
+    description: string;
+  }[];
+}> = ({ meetups }) => (
   <>
-    <MeetupList meetups={DUMMY_MEETUPS} />
+    <MeetupList meetups={meetups} />
   </>
 );
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      meetups: DUMMY_MEETUPS,
+    },
+    revalidate: 10,
+  };
+};
 
 export default Meetup;
