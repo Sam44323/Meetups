@@ -1,9 +1,4 @@
-import {
-  GetServerSidePropsContext,
-  GetStaticPaths,
-  GetStaticProps,
-  GetStaticPropsContext,
-} from "next";
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
 import React from "react";
 import MeetupDetailsComponent from "../../components/meetups/MeetupDetails";
 
@@ -15,7 +10,6 @@ const MeetupDetails: React.FC<{
     description: string;
   };
 }> = ({ meetupData }) => {
-  console.log(meetupData);
   return (
     <>
       <MeetupDetailsComponent
