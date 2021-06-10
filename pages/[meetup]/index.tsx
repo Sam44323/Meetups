@@ -36,14 +36,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
         },
       },
     ],
-    fallback: true,
+    fallback: true, // will dynamically render the pages for other meetup value instead of 404 error
   };
 };
 
 export const getStaticProps: GetStaticProps = async (
   context: GetStaticPropsContext
 ) => {
-  const meetupId = context.params!.meetupId;
+  const meetupId = context.params!.meetupId; // getting the params from the route
 
   return {
     props: {
